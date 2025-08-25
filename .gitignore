@@ -1,0 +1,211 @@
+# Photo Organizer - .gitignore
+
+# Image Files - Exclude all photo formats
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.cr2
+*.CR2
+*.nef
+*.NEF
+*.arw
+*.ARW
+*.dng
+*.DNG
+*.tiff
+*.tif
+*.TIFF
+*.TIF
+*.png
+*.PNG
+*.gif
+*.GIF
+*.bmp
+*.BMP
+*.webp
+*.WEBP
+
+# RAW Files from various camera manufacturers
+*.raf
+*.RAF
+*.orf
+*.ORF
+*.rw2
+*.RW2
+*.pef
+*.PEF
+*.srw
+*.SRW
+*.x3f
+*.X3F
+
+# Video Files
+*.mp4
+*.MP4
+*.mov
+*.MOV
+*.avi
+*.AVI
+*.mkv
+*.MKV
+*.wmv
+*.WMV
+*.flv
+*.FLV
+*.webm
+*.WEBM
+
+# Organized Folders - Don't track the organized photo directories
+RAW_Files/
+JPG_Files/
+SELECTED/
+Backup/
+Archive/
+Processed/
+Exports/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+*.old
+
+# Camera and memory card specific
+DCIM/
+.Trashes
+.fseventsd
+.TemporaryItems
+.DocumentRevisions-V100
+.VolumeIcon.icns
+
+# Lightroom and photo editing software
+*.lrcat
+*.lrcat-lock
+*.lrdata
+*.lrtemplate
+*.xmp
+*.XMP
+.bridge/
+.picasa.ini
+.picasaoriginals/
+
+# Compressed files (might contain photos)
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.bz2
+
+# Large files (LFS candidates)
+*.psd
+*.PSD
+*.ai
+*.AI
+*.indd
+*.INDD
+
+# Personal notes and configurations
+notes.txt
+config.ini
+settings.json
+*.conf
+
+# Backup directories
+*_backup/
+*_old/
+backup_*/
