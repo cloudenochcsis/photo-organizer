@@ -1,7 +1,7 @@
 # Photo Organizer
 
 ![Version](https://img.shields.io/github/v/tag/cloudenochcsis/photo-organizer?label=version)
-![License](https://img.shields.io/github/license/cloudenochcsis/photo-organizer)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
 
 A collection of Python scripts designed to streamline photography workflow by organizing camera files and curating photo selections from large collections.
