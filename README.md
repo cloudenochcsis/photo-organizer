@@ -1,10 +1,33 @@
 # Photo Organizer
 
+![Version](https://img.shields.io/github/v/tag/cloudenochcsis/photo-organizer?label=version)
+![License](https://img.shields.io/github/license/cloudenochcsis/photo-organizer)
+![Python](https://img.shields.io/badge/python-3.6+-blue.svg)
+
 A collection of Python scripts designed to streamline photography workflow by organizing camera files and curating photo selections from large collections.
 
 ## Overview
 
-This project provides tools for photographers to efficiently manage their digital photo collections, particularly useful for organizing files from DSLR cameras that produce both RAW and JPEG formats.
+This project provides tools for photographers to efficiently manage their digital photo collections, particularly useful for organizing files from DSLR cameras that produce both RAW and JPEG formats. Perfect for processing hundreds of photos from photo shoots, events, or travel photography.
+
+## Quick Start
+
+1. **Clone the repository:**
+```bash
+git clone https://github.com/cloudenochcsis/photo-organizer.git
+cd photo-organizer
+```
+
+2. **Copy scripts to your photo directory:**
+```bash
+cp *.py /path/to/your/photos/
+cd /path/to/your/photos/
+```
+
+3. **Organize your photos:**
+```bash
+python3 sort_photos.py
+```
 
 ## Features
 
@@ -32,15 +55,18 @@ Moves specific photos by image number to a selection folder:
 
 ## Installation
 
-1. Clone this repository:
+### Prerequisites
+- Python 3.6 or higher
+- No additional dependencies required (uses only Python standard library)
+
+### Method 1: Clone Repository
 ```bash
-git clone https://github.com/yourusername/photo-organizer.git
+git clone https://github.com/cloudenochcsis/photo-organizer.git
 cd photo-organizer
 ```
 
-2. Ensure Python 3.6+ is installed on your system
-
-3. No additional dependencies required - uses only Python standard library
+### Method 2: Download Scripts
+Download the latest release from [GitHub Releases](https://github.com/cloudenochcsis/photo-organizer/releases) and extract to your desired location.
 
 ## Usage
 
@@ -86,6 +112,59 @@ python3 ../sort_photos.py
 
 This creates organized subfolders within your selection for easy access to RAW vs JPEG versions.
 
+## Sample Output
+
+### sort_photos.py Output
+```
+Photo Sorting Script
+===================
+
+This will move all CR2 files to 'RAW_Files' folder and JPG files to 'JPG_Files' folder.
+Continue? (y/N): y
+Working in directory: /Users/photographer/photos
+Created/verified folders:
+  - /Users/photographer/photos/RAW_Files
+  - /Users/photographer/photos/JPG_Files
+
+Processing 628 files...
+  Moved IMG_8439.CR2 to RAW_Files/
+  Moved IMG_8439.JPG to JPG_Files/
+  [... processing continues ...]
+
+==================================================
+SORTING COMPLETE!
+==================================================
+CR2 files moved: 314
+JPG files moved: 314
+Files skipped: 0
+Total files processed: 628
+
+Folder contents:
+RAW_Files folder: 314 CR2 files
+JPG_Files folder: 314 JPG files
+```
+
+## Troubleshooting
+
+### Common Issues
+
+**Permission Errors**
+- Ensure you have write permissions to the directory
+- On macOS/Linux, you might need to run with appropriate permissions
+
+**Files Not Found**
+- Verify file extensions match (CR2, JPG) - case sensitive on some systems
+- Check that files haven't already been moved or organized
+
+**Script Won't Run**
+- Confirm Python 3.6+ is installed: `python3 --version`
+- Try running with full path: `/usr/bin/python3 script_name.py`
+
+### Getting Help
+
+- Check the [Issues](https://github.com/cloudenochcsis/photo-organizer/issues) page for known problems
+- Create a new issue if you encounter a bug or need help
+
 ## Example Workflow
 
 1. **Initial Organization**: Run `sort_photos.py` in your camera's memory card folder to separate RAW and JPEG files
@@ -128,24 +207,51 @@ your-photo-directory/
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit pull requests or open issues for:
+Contributions are welcome! Here's how you can help:
 
-- Support for additional RAW formats (NEF, ARW, etc.)
-- GUI interface development
-- Performance optimizations
-- Additional organizational features
+### Reporting Issues
+- Use the [GitHub Issues](https://github.com/cloudenochcsis/photo-organizer/issues) page
+- Include your Python version and operating system
+- Provide steps to reproduce the problem
+
+### Suggesting Features
+- Open a feature request on GitHub Issues
+- Describe the use case and expected behavior
+- Consider submitting a pull request if you can implement it
+
+### Pull Requests
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Make your changes and test thoroughly
+4. Commit with clear messages: `git commit -m "Add feature description"`
+5. Push to your fork and submit a pull request
+
+### Development Ideas
+- Support for additional RAW formats (NEF, ARW, ORF, etc.)
+- GUI interface using tkinter or PyQt
+- Configuration file support
+- Batch renaming capabilities
+- Duplicate photo detection
+- Integration with photo management software
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Author
-
-Created for photographers who need efficient tools to manage large photo collections and streamline their digital workflow.
-
 ## Changelog
 
-### Version 1.0
+### Version 1.0.0 (2025-08-25)
 - Initial release with basic sorting functionality
 - Added selective photo curation feature
 - Implemented safety features and error handling
+- Professional documentation and GitHub setup
+- Comprehensive .gitignore for photography projects
+
+## Author
+
+Created by [cloudenochcsis](https://github.com/cloudenochcsis) for photographers who need efficient tools to manage large photo collections and streamline their digital workflow.
+
+---
+
+**Star this repository** if you find it useful! 
+**Report issues** on the [GitHub Issues page](https://github.com/cloudenochcsis/photo-organizer/issues).
